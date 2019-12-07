@@ -1,0 +1,181 @@
+header{
+    background-color: black;
+    height: 120px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left img{
+    padding: 20px 10px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.register{
+    margin-right: 50px;
+}
+
+#btn1{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 15%;
+}
+
+.top{
+    height: 600px;
+    background-image: url(../img/TOP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: snow;
+    font-family: 'Alegreya', serif;
+    font-size: 60px;
+    padding: 200px 150px;
+    animation: fadeIn 8s ease;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+        color: red;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 100%;
+    height: 100vh;
+    grid-template-areas: 
+    'header2'
+    'main'
+    'footer2';
+}
+
+header2{
+    background-color: black;
+    grid-area: header2;
+}
+
+main2{
+    background-color: black;
+    grid-area: main;
+}
+
+footer2{
+    background-color: black;
+    grid-area: footer2;
+}
+
+main2{
+    background-color: red;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px 10px;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+main2 > div{
+    background-color: black;
+    color: snow;
+    text-align: center;
+    line-height: 250px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+main2 > div:hover {
+	transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.2s;	/*変化に掛かる時間*/
+}
+
+@media screen and (max-width:780px) {
+    h1{
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        padding: 400px 50px;
+    }
+
+    .TOP{
+        background-position: center;
+    }
+
+    .header-right{
+        display: none;
+    }
+
+    main2{
+        grid-template-rows: 24% 24% 24% 24%;
+    grid-template-columns: 50% 50%;
+    }
+}
+
+
+.club{
+    height: 800px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+}
+
+h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+footer{
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right{
+    padding: 20px;
+}
+
+.footer-left{
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
