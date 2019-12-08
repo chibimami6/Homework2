@@ -175,10 +175,10 @@ footer{
 
 @media screen and (max-width:480px) {
     h1 {
-        padding: 400px 50px;
+        padding: 280px 30px;
     }
 
-    .TOP{
+    .top{
         background-position: center;
     }
 
@@ -190,9 +190,26 @@ footer{
         padding: 20px 100px;
     }
 
+    .club {
+        margin-top: 450px;
+        padding: 0px 10px;
+    }
+
+    main{
+        background-color: black;
+    }
+
     main2{
         grid-template-rows: 24% 24% 24% 24%;
     grid-template-columns: 50% 50%;
+    }
+
+    .news > span{
+        margin-top: 40px;
+    }
+
+    .footer-left{
+        font-size: 15px;
     }
 }
 
