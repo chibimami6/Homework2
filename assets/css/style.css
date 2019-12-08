@@ -21,9 +21,9 @@ header{
 }
 
 #btn1{
-    font-size: 20px;
-    background-color: red;
+    font-size: 30px;
     border-radius: 15%;
+    font-family: 'Anton', sans-serif;
 }
 
 .top{
@@ -106,34 +106,8 @@ main2 > div:hover {
 	transition-duration: 0.2s;	/*変化に掛かる時間*/
 }
 
-@media screen and (max-width:780px) {
-    h1{
-        padding: 100px;
-    }
-}
-
-@media screen and (max-width:480px) {
-    h1 {
-        padding: 400px 50px;
-    }
-
-    .TOP{
-        background-position: center;
-    }
-
-    .header-right{
-        display: none;
-    }
-
-    main2{
-        grid-template-rows: 24% 24% 24% 24%;
-    grid-template-columns: 50% 50%;
-    }
-}
-
-
 .club{
-    height: 800px;
+    height: 700px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -145,12 +119,26 @@ h2{
     font-size: 50px;
     text-align: center;
     padding: 40px;
+    font-family: 'Calistoga', cursive;
 }
 
 .news{
-
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.news > span {
+    padding: 40px;
+    font-family: 'Calistoga', cursive;
+}
+
+.news > img {
+    padding: 0px 200px;
+}
 
 footer{
     background-color: black;
@@ -169,6 +157,44 @@ footer{
     text-align: center;
 }
 
+
+@media screen and (max-width:780px) {
+    h1{
+        padding: 100px;
+    }
+}
+
+.club{
+    padding: 10px;
+}
+
+.news > img {
+    padding: 10px;
+}
+
+
+@media screen and (max-width:480px) {
+    h1 {
+        padding: 400px 50px;
+    }
+
+    .TOP{
+        background-position: center;
+    }
+
+    .header-right{
+        display: none;
+    }
+
+    .header-left img {
+        padding: 20px 100px;
+    }
+
+    main2{
+        grid-template-rows: 24% 24% 24% 24%;
+    grid-template-columns: 50% 50%;
+    }
+}
 
 
 
