@@ -158,11 +158,70 @@ footer{
 }
 
 
+.contact{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-area{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.form-left> :first-child{
+    margin-bottom: 20px;
+}
+
+.form-left> input{
+    box-sizing: border-box;
+    height: 50px;
+    width: 300px;
+}
+
+.form-right> textarea{
+    box-sizing: border-box;
+    height: 120px;
+    width: 300px;
+}
+
+.h2-1{
+    font-family: none;
+}
+
+.swiper-container {
+    width: 900px;
+    height: 600px;
+}
+
+/* 
+.swiper-slide1{
+    background-image: url(../img/武道館.jpg);
+}
+
+
+.swiper-slide2{
+    background-image: url(../img/MBST2.jpg);
+}
+
+.swiper-slide3{
+    background-image: url(../img/CD.jpg)
+}
+ */
+
 @media screen and (max-width:780px) {
     h1{
         padding: 100px;
     }
-}
 
 .club{
     padding: 10px;
@@ -172,6 +231,11 @@ footer{
     padding: 10px;
 }
 
+.form-left{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+}
 
 @media screen and (max-width:480px) {
     h1 {
@@ -201,7 +265,7 @@ footer{
 
     main2{
         grid-template-rows: 24% 24% 24% 24%;
-    grid-template-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     }
 
     .news > span{
@@ -211,18 +275,13 @@ footer{
     .footer-left{
         font-size: 15px;
     }
+
+    .input-area{
+        flex-direction: column;
+    }
+
+    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

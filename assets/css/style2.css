@@ -1,0 +1,43 @@
+/* .swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.bg-1{
+    background-image: url(../img/NEWS.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-2{
+    background-image: url(../img/MUSE.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-3{
+    background-image: url(../img/翔太.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/* } */
+
+.active {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+ */
+
+
+ let swiper = new Swiper('.swiper-container' {
+    effect: 'coverflow',
+    // centeredSlides: true,
+    slidesPerView: 3,
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  })
+
+
