@@ -199,24 +199,29 @@ footer{
 }
 
 .swiper-container {
-    width: 900px;
-    height: 600px;
+    width: 970px;
+    height: 530px;
 }
 
-/* 
-.swiper-slide1{
+
+.img1{
     background-image: url(../img/武道館.jpg);
 }
 
 
-.swiper-slide2{
+.img2{
     background-image: url(../img/MBST2.jpg);
 }
 
-.swiper-slide3{
+.img3{
     background-image: url(../img/CD.jpg)
 }
- */
+
+.btn1{
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+
 
 @media screen and (max-width:780px) {
     h1{
